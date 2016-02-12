@@ -14,6 +14,7 @@ services:
   - mongodb
 
 # The path for Xunit to output test reports
+
 env:
   - XUNIT_FILE=shippable/testresults/result.xml
 
@@ -25,6 +26,8 @@ before_script:
 # Running the tests with grunt
 script:
   - grunt
+install:
+  - npm install
 
 # Tell istanbul to generate a coverage report
 after_script:
