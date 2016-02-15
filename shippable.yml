@@ -21,9 +21,9 @@ before_script:
 
 # Running the tests with grunt
 script:
-  - grunt
   - ./node_modules/.bin/istanbul cover grunt -- -u tdd
   - ./node_modules/.bin/istanbul report cobertura --dir  shippable/codecoverage/
+
 install:
   - npm install
 
